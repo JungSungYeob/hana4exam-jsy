@@ -1,7 +1,7 @@
 const assert = require("assert");
 const { searchByKoreanInitialSound } = require("./ex5");
 
-const s = ["강원도 고성군", "고성군 토성면", "토성면 북면", "북면", "김1수"];
+const s = ["강원도 고성군", "고성군 토성면", "토성면 북면", "북면", "김1수", "ㅈ2ㅇ"];
 
 assert.deepStrictEqual(searchByKoreanInitialSound(s, "ㄱㅇ"), [
     "강원도 고성군",
@@ -22,3 +22,5 @@ assert.deepStrictEqual(searchByKoreanInitialSound(s, "ㅍㅁ"), []);
 assert.deepStrictEqual(searchByKoreanInitialSound(s, "ㄱ1ㅅ"), ["김1수"]);
 
 /** ---------- 추가 테스트 케이스 ------------- */
+
+console.log(searchByKoreanInitialSound(s,"ㅈ2ㅇ"))

@@ -34,6 +34,7 @@ const getRange = (char) => {
     }
 };
 
+/** regex 생성 함수 */
 const createRegex = (firstSounds) => {
     let regex = "";
     for (let fisrtSound of firstSounds) {
@@ -42,6 +43,7 @@ const createRegex = (firstSounds) => {
     }
     return new RegExp(regex, "");
 };
+
 
 module.exports = {
     searchByKoreanInitialSound: (data, firstSounds) => {
