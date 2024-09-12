@@ -16,3 +16,8 @@ assert.deepStrictEqual(users.sortBy('name:desc,id:,dept:desc'), [
   hong,
 ]);
 assert.deepStrictEqual(users.sortBy('dept:desc,id'), [kim, lee, hong]);
+
+
+// // // /* -------- 정렬 기준이 없다면 -------- */
+
+assert.deepStrictEqual(users.sortBy(), [kim, lee, hong]);  
