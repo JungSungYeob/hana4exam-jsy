@@ -4,7 +4,7 @@ function isObject(obj) {
 }
 
 function deepCopy(obj) {
-    if (!isObject(obj)) {
+    if (!isObject(obj) || obj instanceof WeakSet || obj instanceof WeakMap) {
         return obj;
     }
 
@@ -22,12 +22,6 @@ function deepCopy(obj) {
         });
         return newSet;
     }
-
-    /** WeakSet인 경우 */
-    if (obj instanceof WeakSet) {
-        return new WeakSet();
-    }
-
     /** map인 경우 */
     if (obj instanceof Map) {
         const newMap = new Map();
@@ -37,10 +31,6 @@ function deepCopy(obj) {
         return newMap;
     }
 
-    /** WeakMap인 경우 */
-    if (obj instanceof WeakMap) {
-        return new WeakMap();
-    }
     const newer = {};
 
     /** Deep Copy (value & symbol) */
