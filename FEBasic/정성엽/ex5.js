@@ -32,7 +32,7 @@ const getRange = (char) => {
     } else {
         return char;
     }
-};
+}; 
 
 /** regex 생성 함수 */
 const createRegex = (firstSounds) => {

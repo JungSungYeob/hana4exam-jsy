@@ -41,3 +41,5 @@ assert.notStrictEqual(
 
 
 /** -------- 추가 테스트 ---------- */
+
+console.log("테스트 통과")

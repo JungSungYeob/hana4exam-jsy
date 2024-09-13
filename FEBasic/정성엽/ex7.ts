@@ -40,5 +40,6 @@ export async function getPosts(userId: number | string): Promise<Post[]> {
         })
     );
 
+    // console.log(postsWithComments);
     return postsWithComments;
 }

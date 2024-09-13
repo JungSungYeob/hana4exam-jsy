@@ -28,6 +28,9 @@ function bill(tableNo) {
 
     return {
         order(item) {
+            if(!MENU[item]){
+                return;
+            }
             order.push(item);
             const { price, taxfree } = MENU[item];
             total.price += price;
@@ -65,3 +68,11 @@ table1.printBill();
 
 table2.order("짜장");
 table2.printBill();
+
+//Menu에 없는 주문을 했을 경우 무시
+const table3 = bill(3)
+table3.order('간짜장'); //무시
+table3.order('깐풍기'); //무시
+table3.order('짜장');
+table3.printBill();
+

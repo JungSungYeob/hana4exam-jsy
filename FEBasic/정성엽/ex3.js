@@ -16,6 +16,10 @@ Array.prototype.sortBy = function (sortProp = "") {
             if (a[key] > b[key]) return dir;
             if (a[key] < b[key]) return -dir;
         }
+        //모든 조건이 일치하는 경우 id를 기준으로 asc
+        if (a.id > b.id) return 1;
+        if (a.id < b.id) return -1;
+
         return 0;
     });
 };

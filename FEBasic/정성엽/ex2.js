@@ -17,10 +17,10 @@ const range = (start, end, step = start > end ? -1 : 1) => {
     const results = [];
 
     //step이 양수인지 음수
-
     for (let i = start; step > 0 ? i <= end : i >= end; i += step) {
-        results.push(+i.toFixed(1));
-        i = +i.toFixed(1);
+        //부동소수점 생기는 16자리 이전까지 처리
+        results.push(+i.toFixed(15));
+        i = +i.toFixed(15);
     }
     return results;
 };
