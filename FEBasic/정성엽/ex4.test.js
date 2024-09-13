@@ -38,3 +38,8 @@ assert.notStrictEqual(
   newKim.oo.addr.city,
   'Not Pass3: city가 다르지 않아요!'
 );
+
+
+/** -------- 추가 테스트 ---------- */
+
+console.log("테스트 통과")

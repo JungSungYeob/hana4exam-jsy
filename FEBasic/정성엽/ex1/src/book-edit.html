@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../dist/output.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main-container">
+            <!-- top container -->
+            <div class="top-container">
+                <span class="logo">
+                    <img
+                        class="w-10 h-10"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNmEzNGEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rLW1hcmtlZCI+PHBhdGggZD0iTTEwIDJ2OGwzLTMgMyAzVjIiLz48cGF0aCBkPSJNNCAxOS41di0xNUEyLjUgMi41IDAgMCAxIDYuNSAySDE5YTEgMSAwIDAgMSAxIDF2MThhMSAxIDAgMCAxLTEgMUg2LjVhMSAxIDAgMCAxIDAtNUgyMCIvPjwvc3ZnPg=="
+                        alt="logoImg"
+                    />
+                    <h1 class="font-bold text-green-600 text-3xl">BookMark</h1>
+                </span>
+                <div class="menu">
+                    <a href="https://github.com/JungSungYeob" class="t-link"
+                        >Github Repo.</a
+                    >
+                    <a href="./register.html" class="t-link">SignUp</a>
+                    <img
+                        class=""
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRhbGx5LTEiPjxwYXRoIGQ9Ik00IDR2MTYiLz48L3N2Zz4="
+                        alt="bar"
+                    />
+                    <a href="./index.html" class="t-link">SignIn</a>
+                </div>
+            </div>
+            <!-- mid container -->
+            <div class="mid-container">
+                <!-- bookmark container -->
+                <div class="card">
+                    <form class="border-2 border-green-600 p-3 rounded-xl">
+                        <input
+                            class="inp"
+                            type="text"
+                            value=""
+                            placeholder="URL을 입력하시오."
+                        />
+                        <label class="inline-flex items-center mt-3">
+                            <input type="checkbox" class="hidden peer" />
+                            <div
+                                class="w-4 h-4 bg-gray-200 border-2 border-black rounded peer-checked:bg-green-600 transition-colors"
+                            ></div>
+                            <span class="ml-2">이동 시 자동 삭제</span>
+                        </label>
+                        <div class="mt-3 w-full inline-flex justify-end">
+                            <button class="icon-btn">
+                                <img
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXJvdGF0ZS1jY3ciPjxwYXRoIGQ9Ik0zIDEyYTkgOSAwIDEgMCA5LTkgOS43NSA5Ljc1IDAgMCAwLTYuNzQgMi43NEwzIDgiLz48cGF0aCBkPSJNMyAzdjVoNSIvPjwvc3ZnPg=="
+                                    alt="refresh"
+                                />
+                            </button>
+                            <button type="submit" class="icon-btn">
+                                <img
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNhdmUtYWxsIj48cGF0aCBkPSJNMTAgMnYzYTEgMSAwIDAgMCAxIDFoNSIvPjxwYXRoIGQ9Ik0xOCAxOHYtNmExIDEgMCAwIDAtMS0xaC02YTEgMSAwIDAgMC0xIDF2NiIvPjxwYXRoIGQ9Ik0xOCAyMkg0YTIgMiAwIDAgMS0yLTJWNiIvPjxwYXRoIGQ9Ik04IDE4YTIgMiAwIDAgMS0yLTJWNGEyIDIgMCAwIDEgMi0yaDkuMTcyYTIgMiAwIDAgMSAxLjQxNC41ODZsMi44MjggMi44MjhBMiAyIDAgMCAxIDIyIDYuODI4VjE2YTIgMiAwIDAgMS0yLjAxIDJ6Ii8+PC9zdmc+"
+                                    alt="save"
+                                />
+                            </button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>There is no marks.</p>
+                    </div>
+                </div>
+                <!-- other container -->
+                <div class="w-2/3 p-2">
+                    <button class="btn">+ Add Book</button>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="copyright">
+                <p>© Hanaro 2024</p>
+            </footer>
+        </div>
+    </body>
+</html>
