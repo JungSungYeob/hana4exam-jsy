@@ -19,7 +19,7 @@ export async function getPosts(userId: number | string): Promise<Post[]> {
     // console.log("🚀 ~ getPosts ~ postsData:", postsData);
 
     const postsWithComments = await Promise.all(
-        postsData.map(async (post: any) => {
+        postsData.map(async (post : any) => {
             const commentsResponse = await fetch(
                 `${POST_URL}/${post.id}/comments`
             );

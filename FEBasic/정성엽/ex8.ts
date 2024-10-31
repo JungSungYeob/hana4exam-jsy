@@ -56,4 +56,4 @@ for (let i = 10; i < 15; i++) {
     }, (i - 10) * 600 + 600);
 }//11 12 13 14 15
 
-export = { debounce, throttle };
+export { debounce, throttle };
